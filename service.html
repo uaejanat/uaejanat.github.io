@@ -12,9 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Janat UAE</title>
-  <link rel="icon" href="images/janatlogo.jpg">
-<link rel="shortcut icon" href="images/janatlogo.jpg">
+  <title>JANAT GROUP</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -30,8 +28,6 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 </head>
 
 <body class="sub_page">
@@ -58,19 +54,19 @@
             <a class="" href="index.html">
               Home
             </a>
-            <a class="" href="">
+            <a class="active" href="service.html">
               Services
             </a>
-            <a class="" href="">
+            <a class="" href="why.html">
               Why us
             </a>
             <a class="" href="missionvision.html">
               Mission & Vision
             </a>
-            <a class="" href="product.html">
-              Products
+            <a class="" href="blog.html">
+              Blog
             </a>
-            <a class="active" href="contact.html">
+            <a class="" href="contact.html">
               Contact Us
             </a>
           </div>
@@ -81,83 +77,90 @@
           </span>
         </a>
         <div class="user_option">
-         
+          
         </div>
       </nav>
     </header>
     <!-- end header section -->
   </div>
 
-  <!-- contact section -->
+  <!-- we do section -->
 
-  <section class="contact_section layout_padding section_pl ">
-    <div class="container py_mobile_45">
+  <section class="wedo_section layout_padding section_pr">
+    <div class="container">
       <div class="heading_container">
-        <h2>Get <span>In Touch</span></h2>
+        <h2><span>What</span> We do</h2>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form_container">
-            <form id="submit-form" action="">
-              <div>
-                <input type="text" placeholder="Full Name " required />
+      <div class="carousel-wrap ">
+        <div class="owl-carousel wedo_owl_carousel">
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/wedo-img1.jpg" alt="" />
               </div>
-              <div>
-                <input type="number" placeholder="Phone number" required />
+              <div class="detail-box">
+                <h5>
+                  Growing Fruits and Vegetables
+                </h5>
+                <p>
+                  alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                </p>
+                <a href="">
+                  Read More
+                </a>
               </div>
-              <div>
-                <input type="email" placeholder="Email" required />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" required />
-              </div>
-              <div class="d-flex ">
-                <button>
-                  SEND
-                </button>
-              </div>
-            </form>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="map_container">
-            <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232565.37346128048!2d54.41853648662363!3d24.387078860080567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc7cc2e9341971108!2sAbu%20Dhabi!5e0!3m2!1sen!2sae!4v1643020856553!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="item">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/wedo-img2.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Caring & Planting
+                </h5>
+                <p>
+                  alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/wedo-img3.jpg" alt="" />
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Spring & Fall Cleanup
+                </h5>
+                <p>
+                  alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <script>
-    $("#submit-form").submit((e)=>{
-    e.preventDefault()
-    $.ajax({
-    url:"https://script.google.com/macros/s/AKfycbwE41D00_MQX0bpcvPTy2WLeMWz32asEfM7vLzuDZpMcEDqRkBVT8Mtow/exec",
-    data:$("#submit-form").serialize(),
-    method:"post",
-    success:function (response){
-    alert("Your message has been sent. Thank you!")
-    window.location.reload()
-    //window.location.href="https://google.com"
-    },
-    error:function (err){
-    alert("Something Error")
-    
-    }
-    })
-    })
-    </script>
-  <!-- end contact section -->
 
+  <!-- end we do section -->
 
-  <!-- info section -->
+   <!-- info section -->
 
-  <section class="info_section layout_padding section_pl">
+   <section class="info_section layout_padding section_pl">
     <div class="container">
       <div class="info_logo">
         <a href="">
-          Janat UAE
+          Janat Group
         </a>
       </div>
       <div class="row">
@@ -170,19 +173,19 @@
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Abu Dhabi , UAE
+                  Location
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  Call +00971 2 000000
+                  Call 00971 02 12345
                 </span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  Email : info@janatuae.com
+                  Email : sales@ganatgroup.com
                 </span>
               </a>
             </div>
@@ -211,7 +214,7 @@
               <a class="" href="index.html">
                 Home
               </a>
-              <a class="" href="">
+              <a class="active" href="service.html">
                 Services
               </a>
               <a class="" href="why.html">
@@ -220,10 +223,10 @@
               <a class="" href="missionvision.html">
                 Mission & Vision
               </a>
-              <a class="" href="product.html">
-                Products
+              <a class="" href="blog.html">
+                Blog
               </a>
-              <a class="active" href="contact.html">
+              <a class="" href="contact.html">
                 Contact Us
               </a>
             </div>
@@ -245,7 +248,9 @@
             </p>
           </div>
         </div>
-        
+        <div class="col-md-3">
+         
+        </div>
       </div>
     </div>
   </section>
@@ -253,8 +258,8 @@
   <!-- end info section -->
 
 
-  <!-- footer section -->
-  <footer class="footer_section">
+   <!-- footer section -->
+   <footer class="footer_section">
     <div class="container">
       <p>
         &copy; <span id="displayYear"></span> All Rights Reserved. Design by
@@ -268,8 +273,6 @@
   <script src="js/bootstrap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/custom.js"></script>
-
- 
 
 </body>
 

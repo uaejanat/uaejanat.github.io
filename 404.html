@@ -12,275 +12,6 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>JANAT GROUP</title>
-  <link rel="icon" href="images/janatlogo.jpg">
-<link rel="shortcut icon" href="images/janatlogo.jpg">
-
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <!-- fonts awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,,600,700|Poppins:400,500,700&display=swap" rel="stylesheet" />
-
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-</head>
-
-<body class="sub_page">
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <nav class="navbar navbar-expand-lg custom_nav-container">
-        <div class="custom_menu-btn">
-          <button onclick="openNav()">
-            <span class="s-1"> </span>
-            <span class="s-2"> </span>
-            <span class="s-3"> </span>
-          </button>
-        </div>
-        <div id="myNav" class="overlay">
-          <div class="menu_btn-style ">
-            <button onclick="closeNav()">
-              <span class="s-1"> </span>
-              <span class="s-2"> </span>
-              <span class="s-3"> </span>
-            </button>
-          </div>
-          <div class="overlay-content">
-            <a class="" href="index.html">
-              Home
-            </a>
-            <a class="" href="">
-              Services
-            </a>
-            <a class="" href="">
-              Why us
-            </a>
-            <a class="" href="">
-              Testimonial
-            </a>
-            <a class="" href="">
-              Blog
-            </a>
-            <a class="active" href="contact.html">
-              Contact Us
-            </a>
-          </div>
-        </div>
-        <a class="navbar-brand" href="index.html">
-          <span>
-            Janat UAE
-          </span>
-        </a>
-        <div class="user_option">
-         
-        </div>
-      </nav>
-    </header>
-    <!-- end header section -->
-  </div>
-
-  <!-- contact section -->
-
-  <section class="contact_section layout_padding section_pl ">
-    <div class="container py_mobile_45">
-      <div class="heading_container">
-        <h2>Get <span>In Touch</span></h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form_container">
-            <form id="submit-form" action="">
-              <div>
-                <input type="text" placeholder="Full Name " required />
-              </div>
-              <div>
-                <input type="number" placeholder="Phone number" required />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" required />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" required />
-              </div>
-              <div class="d-flex ">
-                <button>
-                  SEND
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="map_container">
-            <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232565.37346128048!2d54.41853648662363!3d24.387078860080567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc7cc2e9341971108!2sAbu%20Dhabi!5e0!3m2!1sen!2sae!4v1643020856553!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <script>
-    $("#submit-form").submit((e)=>{
-    e.preventDefault()
-    $.ajax({
-    url:"https://script.google.com/macros/s/AKfycbwE41D00_MQX0bpcvPTy2WLeMWz32asEfM7vLzuDZpMcEDqRkBVT8Mtow/exec",
-    data:$("#submit-form").serialize(),
-    method:"post",
-    success:function (response){
-    alert("Your message has been sent. Thank you!")
-    window.location.reload()
-    //window.location.href="https://google.com"
-    },
-    error:function (err){
-    alert("Something Error")
-    
-    }
-    })
-    })
-    </script>
-  <!-- end contact section -->
-
-
-  <!-- info section -->
-
-  <section class="info_section layout_padding section_pl">
-    <div class="container">
-      <div class="info_logo">
-        <a href="">
-          Janat UAE
-        </a>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="info_contact">
-            <h4>
-              Address
-            </h4>
-            <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Abu Dhabi , UAE
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +00971 2 000000
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  Email : info@janatuae.com
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="info_social">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="info_link_box">
-            <h4>
-              Links
-            </h4>
-            <div class="info_links">
-              <a class="" href="index.html">
-                Home
-              </a>
-              <a class="" href="service.html">
-                Services
-              </a>
-              <a class="" href="why.html">
-                Why Us
-              </a>
-              <a class="" href="testimonial.html">
-                Testimonial
-              </a>
-              <a class="" href="blog.html">
-                Blog
-              </a>
-              <a class="active" href="contact.html">
-                Contact Us
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="info_detail">
-            <h4>
-              Products
-            </h4>
-            <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
-            </p>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- end info section -->
-
-
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved. Design by
-        <a href="https://janatuae.com/">Janat UAE</a>
-      </p>
-    </div>
-  </footer>
-  <!-- footer section -->
-
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="js/custom.js"></script>
-
-  <!-- End Google Map -->
-
-</body>
-
-</html><!DOCTYPE html>
-<html>
-
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
   <title>Janat UAE</title>
   <link rel="icon" href="images/janatlogo.jpg">
 <link rel="shortcut icon" href="images/janatlogo.jpg">
@@ -336,17 +67,20 @@
             <a class="" href="missionvision.html">
               Mission & Vision
             </a>
-            <a class="" href="">
-              Blog
+            <a class="" href="product.html">
+              Products
             </a>
-            <a class="active" href="contact.html">
+            <a class="" href="contact.html">
               Contact Us
+            </a>
+            <a class="active" href="404.html">
+              404
             </a>
           </div>
         </div>
         <a class="navbar-brand" href="index.html">
           <span>
-            Janat UAE
+            Janat Group
           </span>
         </a>
         <div class="user_option">
@@ -483,17 +217,20 @@
               <a class="" href="">
                 Services
               </a>
-              <a class="" href="">
+              <a class="" href="why.html">
                 Why Us
               </a>
               <a class="" href="missionvision.html">
                 Mission & Vision
               </a>
-              <a class="" href="">
-                Blog
+              <a class="" href="product.html">
+                Products
               </a>
-              <a class="active" href="contact.html">
+              <a class="" href="contact.html">
                 Contact Us
+              </a>
+              <a class="active" href="404.html">
+               404
               </a>
             </div>
           </div>
@@ -504,9 +241,13 @@
               Products
             </h4>
             <p>
-                These are the products and services we offer
-                Investing in farms with the owners
-                Sale plants seeds and agriculture accessories  and network. Sale our fresh and healthy vegetables and fruits to the customers. 
+              Heirloom Corn
+            </p>
+            <p>
+              Summer Tomatoes
+            </p>
+            <p>
+              Stone Fruit
             </p>
           </div>
         </div>
@@ -534,7 +275,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="js/custom.js"></script>
 
-
+ 
 
 </body>
 
