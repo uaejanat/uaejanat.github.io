@@ -106,67 +106,67 @@
     <!-- end header section -->
   </div>
 
-  <!-- contact section -->
+ <!-- contact section -->
 
-  <section class="contact_section layout_padding section_pl ">
-    <div class="container py_mobile_45">
-      <div class="heading_container">
-        <h2>Get <span>In Touch</span></h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form_container">
-            <form id="submit-form" action="">
-              <div>
-                <input type="text" placeholder="Full Name " required />
-              </div>
-              <div>
-                <input type="number" placeholder="Phone number" required />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" required />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" required />
-              </div>
-              <div class="d-flex ">
-                <button>
-                  SEND
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="map_container">
-            <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232565.37346128048!2d54.41853648662363!3d24.387078860080567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc7cc2e9341971108!2sAbu%20Dhabi!5e0!3m2!1sen!2sae!4v1643020856553!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+ <section class="contact_section layout_padding section_pl ">
+  <div class="container py_mobile_45">
+    <div class="heading_container">
+      <h2>Get <span>In Touch</span></h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form_container">
+          <form id="submit-form" action="">
+            <div>
+              <input type="text" name="name" placeholder="Full Name " required />
             </div>
+            <div>
+              <input type="number" name="phone" placeholder="Phone number" required />
+            </div>
+            <div>
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <div>
+              <input type="text" class="message-box" name="message" placeholder="Message" required />
+            </div>
+            <div class="d-flex ">
+              <button>
+                SEND
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="map_container">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232565.37346128048!2d54.41853648662363!3d24.387078860080567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc7cc2e9341971108!2sAbu%20Dhabi!5e0!3m2!1sen!2sae!4v1643020856553!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <script>
-    $("#submit-form").submit((e)=>{
-    e.preventDefault()
-    $.ajax({
-    url:"https://script.google.com/macros/s/AKfycbwE41D00_MQX0bpcvPTy2WLeMWz32asEfM7vLzuDZpMcEDqRkBVT8Mtow/exec",
-    data:$("#submit-form").serialize(),
-    method:"post",
-    success:function (response){
-    alert("Your message has been sent. Thank you!")
-    window.location.reload()
-    //window.location.href="https://google.com"
-    },
-    error:function (err){
-    alert("Something Error")
-    
-    }
-    })
-    })
-    </script>
-  <!-- end contact section -->
+  </div>
+</section>
+<script>
+  $("#submit-form").submit((e)=>{
+  e.preventDefault()
+  $.ajax({
+  url:"https://script.google.com/macros/s/AKfycbz5eYgE29RGgd8-SM34pFytdVSc9q-o6e6r8oHN16pB_fpiFH2OYjVSD2H9qRqk9Y4CzA/exec",
+  data:$("#submit-form").serialize(),
+  method:"post",
+  success:function (response){
+  alert("Our sales team will contact you shortly. Thank you!")
+  window.location.reload()
+  //window.location.href="https://google.com"
+  },
+  error:function (err){
+  alert("Something Error")
+  
+  }
+  })
+  })
+  </script>
+<!-- end contact section -->
 
 
   <!-- info section -->
