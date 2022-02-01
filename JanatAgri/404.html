@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Janat UAE</title>
+  <link rel="icon" href="img/favicon.png">
+<link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,,600,700|Poppins:400,500,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+    if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+    function mischandler(){
+    return false;
+    }
+    function mousehandler(e){
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if((eventbutton==2)||(eventbutton==3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    </script>
+
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <div class="custom_menu-btn">
+          <button onclick="openNav()">
+            <span class="s-1"> </span>
+            <span class="s-2"> </span>
+            <span class="s-3"> </span>
+          </button>
+        </div>
+        <div id="myNav" class="overlay">
+          <div class="menu_btn-style ">
+            <button onclick="closeNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <a class="" href="IndexMainpage.html">
+              Home
+            </a>
+            <a class="" href="">
+              Services
+            </a>
+            <a class="" href="">
+              Why us
+            </a>
+            <a class="" href="missionvision.html">
+              Mission & Vision
+            </a>
+            <a class="" href="product.html">
+              Products
+            </a>
+            <a class="" href="contact.html">
+              Contact Us
+            </a>
+            <a class="active" href="404.html">
+              404
+            </a>
+          </div>
+        </div>
+        <a class="navbar-brand" href="index.html">
+          <span>
+            Janat Group
+          </span>
+        </a>
+        <div class="user_option">
+         
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+  </div>
+
+ <!-- contact section -->
+
+ <section class="contact_section layout_padding section_pl ">
+  <div class="container py_mobile_45">
+    <div class="heading_container">
+      <h2>Get <span>In Touch</span></h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form_container">
+          <form id="submit-form" action="">
+            <div>
+              <input type="text" name="name" placeholder="Full Name " required />
+            </div>
+            <div>
+              <input type="number" name="phone" placeholder="Phone number" required />
+            </div>
+            <div>
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <div>
+              <input type="text" class="message-box" name="message" placeholder="Message" required />
+            </div>
+            <div class="d-flex ">
+              <button>
+                SEND
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="map_container">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232565.37346128048!2d54.41853648662363!3d24.387078860080567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc7cc2e9341971108!2sAbu%20Dhabi!5e0!3m2!1sen!2sae!4v1643020856553!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  $("#submit-form").submit((e)=>{
+  e.preventDefault()
+  $.ajax({
+  url:"https://script.google.com/macros/s/AKfycbz5eYgE29RGgd8-SM34pFytdVSc9q-o6e6r8oHN16pB_fpiFH2OYjVSD2H9qRqk9Y4CzA/exec",
+  data:$("#submit-form").serialize(),
+  method:"post",
+  success:function (response){
+  alert("Our sales team will contact you shortly. Thank you!")
+  window.location.reload()
+  //window.location.href="https://google.com"
+  },
+  error:function (err){
+  alert("Something Error")
+  
+  }
+  })
+  })
+  </script>
+<!-- end contact section -->
+
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding section_pl">
+    <div class="container">
+      <div class="info_logo">
+        <a href="">
+          Janat UAE
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Abu Dhabi, UAE
+                </span>
+              </a>
+              <a href="tel:0097121234567">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  971 2 1234567
+                </span>
+              </a>
+              <a href="mailto:sales@janatuae.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  sales@janatuae.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="" href="IndexMainpage.html">
+                Home
+              </a>
+              <a class="" href="">
+                Services
+              </a>
+              <a class="" href="why.html">
+                Why Us
+              </a>
+              <a class="" href="missionvision.html">
+                Mission & Vision
+              </a>
+              <a class="" href="product.html">
+                Products
+              </a>
+              <a class="" href="contact.html">
+                Contact Us
+              </a>
+              <a class="active" href="404.html">
+               404
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_detail">
+            <h4>
+              Products
+            </h4>
+            <p>
+              Heirloom Corn
+            </p>
+            <p>
+              Summer Tomatoes
+            </p>
+            <p>
+              Stone Fruit
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved. Design by
+        <a href="https://janatuae.com/" target="_blank">Janat Group</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+
+ 
+
+</body>
+
+</html>
