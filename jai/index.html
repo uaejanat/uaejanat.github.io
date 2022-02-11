@@ -49,6 +49,22 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <script>
+    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+    if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+    function mischandler(){
+    return false;
+    }
+    function mousehandler(e){
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if((eventbutton==2)||(eventbutton==3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    </script>
+
 </head>
 
 <body class="sub_page">
@@ -221,7 +237,7 @@
           <div class="footer_items">
             <div class="row">
               <div class="col-md-4">
-                <a href="https://goo.gl/maps/JnMEKdd9VFbkFLef9">
+                <a href="https://goo.gl/maps/JnMEKdd9VFbkFLef9" target="_blank">
                   <div class="item ">
                     <div class="img-box ">
                       <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -265,7 +281,7 @@
       <div class="container">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="">Janat Group</a>
+          <a href="https://janatuae.com/" target="_blank">Janat Group</a>
         </p>
       </div>
     </div>
@@ -283,10 +299,7 @@
   </script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
+  
 
 </body>
 
