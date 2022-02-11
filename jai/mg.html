@@ -50,6 +50,24 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+
+  <script>
+    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+    if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+    function mischandler(){
+    return false;
+    }
+    function mousehandler(e){
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if((eventbutton==2)||(eventbutton==3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    </script>
+
+
 </head>
 
 <body class="sub_page">
@@ -64,7 +82,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              Janat Group
+              Janat Group Mission & Goal
             </span>
           </a>
 
@@ -94,11 +112,11 @@
           </p>
           <div class="heading_container">
             <h2>
-              <span>Goals</span>
+              <span>Goal</span>
             </h2>
           </div>
           <p>
-            Our goal to provide our clients with quality agricultural goods and services in one spot.</p>
+            Our Goal to provide our clients with quality agricultural goods and services in one spot.</p>
         </div>
       </div>
 
