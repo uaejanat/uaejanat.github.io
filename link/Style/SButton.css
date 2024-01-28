@@ -38,6 +38,10 @@
   .circle ul li .fa-youtube:hover {
     color: #FF0000;
   }
+
+  .circle ul li .fa-snapchat:hover {
+    color: #f4f809;
+  }
   
   .circle ul li .fa-quora:hover {
     color: #B92B27;
